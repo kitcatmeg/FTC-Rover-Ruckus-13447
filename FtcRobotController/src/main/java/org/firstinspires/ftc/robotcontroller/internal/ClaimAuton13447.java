@@ -86,12 +86,12 @@ public class ClaimAuton13447 extends OpMode {
             claimUp();
             sensorUp();
             climbDown();
-            sleep(1875);
+            sleep(1825);
             stopMotors();
             sleep(200);
             step++;
         } else if (step == 1){
-            if (imu.getZAngle() > 0) {
+            /*if (imu.getZAngle() > 0) {
                 turnRight();
                 sleep(20 * (int)imu.getZAngle());
                 stopMotors();
@@ -104,39 +104,18 @@ public class ClaimAuton13447 extends OpMode {
             } else {
                 stopMotors();
                 sleep(200);
-            }
+            }*/
             step++;
         } else if (step == 2) {
-            strafeLeft();
-            sleep(385);
-            stopMotors();
-            sleep(200);
             step++;
         } else if (step == 3){
-            if (imu.getZAngle() > 0) {
-                turnRight();
-                sleep(20 * (int)imu.getZAngle());
-                stopMotors();
-                sleep(200);
-            } else if (imu.getZAngle() < 0) {
-                turnLeft();
-                sleep(20 * (int)imu.getZAngle());
-                stopMotors();
-                sleep(200);
-            } else {
-                stopMotors();
-                sleep(200);
-            }
-            step++;
-        } else if (step == 4) {
-            moveBackward();
-            climbUp();
-            sleep(750);
+            strafeLeft();
+            sleep(400);
             stopMotors();
             sleep(200);
             step++;
-        } else if (step == 5){
-            if (imu.getZAngle() > 0) {
+        } else if (step == 4) {
+            /*if (imu.getZAngle() > 0) {
                 turnRight();
                 sleep(20 * (int)imu.getZAngle());
                 stopMotors();
@@ -149,7 +128,14 @@ public class ClaimAuton13447 extends OpMode {
             } else {
                 stopMotors();
                 sleep(200);
-            }
+            }*/
+            step++;
+        } else if (step == 5){
+            moveBackward();
+            climbUp();
+            sleep(800);
+            stopMotors();
+            sleep(200);
             step++;
         } else if (step == 6) {
             strafeRight();
@@ -158,42 +144,14 @@ public class ClaimAuton13447 extends OpMode {
             sleep(250);
             step++;
         } else if (step == 7) {
-            if (imu.getZAngle() > 0) {
-                turnRight();
-                sleep(20 * (int)imu.getZAngle());
-                stopMotors();
-                sleep(200);
-            } else if (imu.getZAngle() < 0) {
-                turnLeft();
-                sleep(20 * (int)imu.getZAngle());
-                stopMotors();
-                sleep(200);
-            } else {
-                stopMotors();
-                sleep(200);
-            }
             step++;
         } else if (step == 8) {
             moveBackward();
-            sleep(1000);
+            sleep(1050);
             stopMotors();
             sleep(200);
             step++;
         } else if (step == 9) {
-            if (imu.getZAngle() > 0) {
-                turnRight();
-                sleep(20 * (int)imu.getZAngle());
-                stopMotors();
-                sleep(200);
-            } else if (imu.getZAngle() < 0) {
-                turnLeft();
-                sleep(20 * (int)imu.getZAngle());
-                stopMotors();
-                sleep(200);
-            } else {
-                stopMotors();
-                sleep(200);
-            }
             step++;
         } else if (step == 10) {
             claimDown();
@@ -294,6 +252,4 @@ public class ClaimAuton13447 extends OpMode {
     public void claimDown() {
         claim.setPosition(0.3);
     }
-
-
 }

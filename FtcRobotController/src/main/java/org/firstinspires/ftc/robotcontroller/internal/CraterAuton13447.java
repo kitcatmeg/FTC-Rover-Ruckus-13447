@@ -115,7 +115,7 @@ public class CraterAuton13447 extends OpMode {
         } else if (step == 4) {
             moveBackward();
             climbUp();
-            sleep(750);
+            sleep(800);
             step++;
         } else if (step == 5) {
             stopMotors();
@@ -123,7 +123,7 @@ public class CraterAuton13447 extends OpMode {
             step++;
         } else if (step == 6) {
             strafeRight();
-            sleep (2800);
+            sleep (2850);
             step++;
         } else if (step == 7) {
             stopMotors();
@@ -131,7 +131,7 @@ public class CraterAuton13447 extends OpMode {
             step++;
         } else if (step == 8) {
             turnRight();
-            sleep(990);
+            sleep(980);
             step++;
         } else if (step == 9) {
             stopMotors();
@@ -139,7 +139,7 @@ public class CraterAuton13447 extends OpMode {
             step++;
         } else if (step == 10) {
             moveBackward();
-            sleep(1300);
+            sleep(1350);
             step++;
         } else if (step == 11) {
             stopMotors();
